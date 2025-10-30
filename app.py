@@ -85,7 +85,7 @@ def gallery():
 
 
 # ========== HEALTH ENDPOINT ==========
-@app.get("/health")
+@app.get("/api/v1/health")
 def health():
     """Simple health check"""
     return jsonify(ok=True), 200
