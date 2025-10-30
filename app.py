@@ -85,10 +85,10 @@ def gallery():
 
 
 # ========== HEALTH ENDPOINT ==========
-@app.get("/api/v1/health")
+@app.route("/api/v1/health", methods=["GET"])
 def health():
     """Simple health check"""
-    return jsonify(ok=True), 200
+    return jsonify({"ok": True}), 200
 
 
 # Run the app locally
